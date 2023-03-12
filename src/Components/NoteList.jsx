@@ -6,7 +6,7 @@ const NoteList = ({notes,text,handleTextArea,handleSave,handleDelete,handleEdit,
   return (
     <div className='note-list'>
        {notes.map(item => {
-        return <Note key={item.id} item={item} text={text} handleTextArea={handleTextArea} me={me} handleDelete={handleDelete} handleEdit={handleEdit}/>
+        return <Note key={item.id} item={item} text={text} handleTextArea={handleTextArea}  handleDelete={handleDelete} handleEdit={handleEdit}/>
        })}
        <AddNote handleTextArea={handleTextArea} text={text} handleSave={handleSave}/>
     </div>

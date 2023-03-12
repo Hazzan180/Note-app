@@ -47,6 +47,7 @@ function App() {
   const [alert, setAlert] = useState({show:false})
 
   // ****** useEffect *****
+  //useEffect will set our note to localstorage anytime [note] changes
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes))
   }, [notes])
